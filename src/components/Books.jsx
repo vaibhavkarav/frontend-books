@@ -15,7 +15,7 @@ const Books = () => {
       );
 
       if (!response.ok) {
-        throw "Failed to delete book.";
+        console.log("Failed to delete book.");
       }
 
       const data = await response.json();

@@ -38,7 +38,7 @@ const AddBookForm = () => {
       );
 
       if (!response.ok) {
-        throw "Failed to add book";
+        console.log("Failed to add book");
       }
 
       const data = await response.json();
