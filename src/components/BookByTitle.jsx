@@ -1,7 +1,7 @@
 import useFetch from "../useFetch";
 
 const BookByTitle = ({ title }) => {
-  const { data, loading, error } = useFetch(
+  const { data, loading } = useFetch(
     `https://backend-books-beryl.vercel.app/books/${title}`
   );
 
